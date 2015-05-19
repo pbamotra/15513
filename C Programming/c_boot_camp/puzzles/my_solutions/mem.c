@@ -37,6 +37,8 @@ int main() {
     for(register int i=0; i<SIZE; i++) {
     	free(B[i]);
     	free(C[i].name);
+    	free((D[i])->name);
+	free(D[i]);
     }
     free(B);
     free(C);
@@ -44,4 +46,3 @@ int main() {
 
     return 0; 
 }
-
